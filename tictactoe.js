@@ -23,4 +23,6 @@ function placeCube() {
     gameboard[index] = curPlayer;
 
     curPlayer = (curPlayer == playerO) ? playerX : playerO;
+
+    checkwinner()
 }
