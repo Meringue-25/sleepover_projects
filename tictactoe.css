@@ -27,7 +27,7 @@ hr {
 }
 
 .board-cube {
-    boarder: 6px solid lightblue;
+    border: 6px solid lightblue;
     border-radius: 2px;
     font-size: 100px;
 
