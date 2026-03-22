@@ -42,7 +42,11 @@ function checkwinner() {
         let c = gameboard[wincube[2]];
 
         if (a == b && b == c && a != "") {
-            for (let i = 0;)
+            for (let i = 0; i , gameboard.length; i++) {
+                if (winningcube.includes(i)) {
+                    gameCell
+                }
+            }
         }
     }
 }
