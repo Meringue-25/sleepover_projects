@@ -18,6 +18,8 @@ let winningcubes = [
     [2, 4, 6]
 ];
 
+let gameover = false;
+
 window.onload = function()  {
     boardCubes = document.getElementsByClassName("board-cube");
     for (let cube of boardCubes) {
@@ -26,6 +28,10 @@ window.onload = function()  {
 }
 
 function placeCube() {
+
+    if (gameover) {
+        return;
+    }
 
     const index = parseInt(this.getAttribute("data-cell-index"));
     if (gameboard[index] !== "") {
@@ -56,6 +62,8 @@ function checkwinner() {
                     boardCubes[i].classList.add("winning-board-cube");
                 }
             }
+            gameover = true;
+            return;
         }
     }
 }
