@@ -40,6 +40,7 @@ function placeCube() {
 
     // check winner
     checkwinner();
+    
 
 }
 
