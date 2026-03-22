@@ -19,12 +19,15 @@ let winningcubes = [
 ];
 
 let gameover = false;
+let restartButton;
 
 window.onload = function()  {
     boardCubes = document.getElementsByClassName("board-cube");
     for (let cube of boardCubes) {
         cube.addEventListener("click", placeCube);
     }
+    restartButton = document.getElementById("restart-button");
+    restartButton.addEventListener("click", restartgame);
 }
 
 function placeCube() {
@@ -68,6 +71,11 @@ function checkwinner() {
     }
 }
 
-function restartButton() {
-    
+function restartgame() {
+    gameover = false;
+    gameboard = ["", "", "", "", "", "", "", "", ""]
+    for (let cube of boardCubes) {
+        cube.innerText = "";
+        cube.classList.remove("winning-board-cube");
+    }
 }
