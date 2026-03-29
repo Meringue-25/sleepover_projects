@@ -1,14 +1,14 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(248, 235, 249);
     font-family: Arial, Helvetica, sans-serif;
-    color: #a6c6f5;
+    color: #ea88c8;
     text-align: center;
 }
 
 hr {
     width: 500px;
     height: 2px;
-    background-color: skyblue;
+    background-color: rgb(245, 201, 239);
     border: 0;
 }
 
@@ -17,9 +17,9 @@ hr {
     height: 450px;
     margin: 0 auto;
 
-    background-color: skyblue;
+    background-color: rgb(245, 201, 239);
     color:#FFFFFF;
-    border: 6px solid lightblue;
+    border: 6px solid rgb(230, 173, 211);;
     border-radius: 10px;
 
     display: grid;
@@ -27,7 +27,7 @@ hr {
 }
 
 .board-cube {
-    border: 6px solid lightblue;
+    border: 6px solid rgb(230, 173, 211);
     border-radius: 2px;
     font-size: 100px;
 
@@ -38,16 +38,16 @@ hr {
 
 .winning-board-cube {
     background-color: white;
-    color:skyblue;
+    color:rgb(245, 201, 239);
 
 }
 
 #restart-button {
     height: 50px;
     width: 150px;
-    border: 5px solid lightblue;
+    border: 5px solid rgb(230, 173, 211);;
     border-radius: 5px;
-    background-color: skyblue;
+    background-color: rgb(245, 201, 239);
     color: white;
     font-size: 20px;
     margin-top: 20px;
